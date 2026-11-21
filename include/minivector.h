@@ -99,9 +99,9 @@ inline float mm_uvec4_len(mm_uvec4_t v) { return sqrtf(v.x * v.x + v.y * v.y + v
 inline float mm_uvec4_dot(mm_uvec4_t a, mm_uvec4_t b) { return a.x * b.x + a.y * b.y + a.y * b.y + a.w * b.w; }
 
 #ifdef MM_STRIP_PREFIX
-#	define vec2 mm_vec2_t
-#	define vec3 mm_vec3_t
-#	define vec4 mm_vec4_t
+typedef mm_vec2_t vec2_t;
+typedef mm_vec3_t vec3_t;
+typedef mm_vec4_t vec4_t;
 
 #	define vec2_add mm_vec2_add
 #	define vec2_sub mm_vec2_sub
@@ -125,9 +125,9 @@ inline float mm_uvec4_dot(mm_uvec4_t a, mm_uvec4_t b) { return a.x * b.x + a.y *
 #	define vec4_len mm_vec4_len
 #	define vec4_dot mm_vec4_dot
 
-#	define ivec2 mm_ivec2_t
-#	define ivec3 mm_ivec3_t
-#	define ivec4 mm_ivec4_t
+typedef mm_ivec2_t ivec2_t;
+typedef mm_ivec3_t ivec3_t;
+typedef mm_ivec4_t ivec4_t;
 
 #	define ivec2_add mm_ivec2_add
 #	define ivec2_sub mm_ivec2_sub
@@ -151,9 +151,9 @@ inline float mm_uvec4_dot(mm_uvec4_t a, mm_uvec4_t b) { return a.x * b.x + a.y *
 #	define ivec4_len mm_ivec4_len
 #	define ivec4_dot mm_ivec4_dot
 
-#	define uvec2 mm_uvec2_t
-#	define uvec3 mm_uvec3_t
-#	define uvec4 mm_uvec4_t
+typedef mm_uvec2_t uvec2_t;
+typedef mm_uvec3_t uvec3_t;
+typedef mm_uvec4_t uvec4_t;
 
 #	define uvec2_add mm_uvec2_add
 #	define uvec2_sub mm_uvec2_sub
